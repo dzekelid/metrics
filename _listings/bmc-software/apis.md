@@ -10,9 +10,9 @@ tags:
 - Monitoring
 - Devops
 - Applications
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/metrics/master/_listings/bmc-software/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: BMC Software API
@@ -25,7 +25,7 @@ apis:
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/metrics/master/_listings/bmc-software/metrics-dynamicgraphs-.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/v1-mobile-devices-userdeviceid-delete.md
 x-common:
 - type: x-blog
   url: http://www.bmc.com/blogs
