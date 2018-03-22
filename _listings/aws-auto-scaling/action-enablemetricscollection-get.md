@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=EnableMetricsCollection&k=1:
+  /?Action=EnableMetricsCollection:
     get:
       summary: ' Enable Metrics Collection '
       description: Enables group metrics for the specified Auto Scaling group
