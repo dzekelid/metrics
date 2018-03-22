@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DisableMetricsCollection&k=1:
+  /?Action=DisableMetricsCollection:
     get:
       summary: ' Disable Metrics Collection '
       description: Disables group metrics for the specified Auto Scaling group
