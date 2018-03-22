@@ -33,7 +33,7 @@ apis:
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-cloudwatch/action-describealarmsformetric-.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-cloudwatch/action-listmetrics-.md
 x-common:
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
