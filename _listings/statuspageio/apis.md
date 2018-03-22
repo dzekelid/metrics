@@ -10,9 +10,9 @@ x-alexaRank: ""
 tags:
 - Stack Network
 - Monitoring
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/metrics/master/_listings/statuspageio/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspageio/apis.yaml
 specificationVersion: "0.14"
 apis: []
 x-common:
