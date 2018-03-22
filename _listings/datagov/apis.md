@@ -28,7 +28,7 @@ apis:
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/me-metrics-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/metrics-id-get.md
 x-common:
 - type: x-blog
   url: https://www.data.gov/meta/
