@@ -17,8 +17,8 @@ tags:
 - Deployment
 - Compute
 - Amazon Web Services
-created: "2018-03-21"
-modified: "2018-03-21"
+created: "2018-03-23"
+modified: "2018-03-23"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -32,7 +32,7 @@ apis:
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-enablemetricscollection-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-disablemetricscollection-get.md
 x-common:
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
