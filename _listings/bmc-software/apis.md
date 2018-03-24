@@ -25,7 +25,7 @@ apis:
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-definitions-.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-dynamicgraphs-.md
 x-common:
 - type: x-blog
   url: http://www.bmc.com/blogs
