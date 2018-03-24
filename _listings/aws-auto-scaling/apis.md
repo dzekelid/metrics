@@ -32,7 +32,7 @@ apis:
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-disablemetricscollection-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-enablemetricscollection-get.md
 x-common:
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
