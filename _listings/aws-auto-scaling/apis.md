@@ -33,15 +33,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-enablemetricscollection-get.md
-- name: AWS Auto Scaling API Disable Metrics Collection
-  description: Disables group metrics for the specified Auto Scaling group.
+- name: AWS Auto Scaling API Enable Metrics Collection
+  description: Enables group metrics for the specified Auto Scaling group.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2_AutoScaling.png
   humanURL: https://aws.amazon.com/autoscaling/
   baseURL: http:://{host}//
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-disablemetricscollection-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-enablemetricscollection-get.md
 x-common:
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
