@@ -33,7 +33,36 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-enablemetricscollection-get.md
+- name: AWS Auto Scaling API Disable Metrics Collection
+  description: Disables group metrics for the specified Auto Scaling group.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Compute_AmazonEC2_AutoScaling.png
+  humanURL: https://aws.amazon.com/autoscaling/
+  baseURL: http:://{host}//
+  tags: Metrics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-auto-scaling/action-disablemetricscollection-get.md
 x-common:
+- type: x-articles
+  url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
+- type: x-change-log
+  url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=86
+- type: x-code
+  url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=85
+- type: x-command-line-interface
+  url: http://docs.aws.amazon.com/cli/latest/reference/autoscaling/index.html
+- type: x-documentation
+  url: http://docs.aws.amazon.com/AutoScaling/latest/APIReference/
+- type: x-forum
+  url: http://developer.amazonwebservices.com/connect/forum.jspa?forumID=30
+- type: x-getting-started
+  url: https://aws.amazon.com/autoscaling/getting-started/
+- type: x-pricing
+  url: https://aws.amazon.com/autoscaling/pricing/
+- type: x-service-health
+  url: http://status.aws.amazon.com/
+- type: x-website
+  url: https://aws.amazon.com/autoscaling/
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
 - type: x-change-log
