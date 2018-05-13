@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CloudWatch API
+  title: Amazon CloudWatch API Describe Alarms For Metric
   version: 1.0.0
+  description: Retrieves the alarms for the specified metric.
 schemes:
 - http
 produces:
