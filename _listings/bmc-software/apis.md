@@ -26,16 +26,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-dynamicgraphs-.md
-- name: BMC Software API Available metrics
-  description: Determine which metrics are available to return historical data for,
-    for a specific subject (device or service) over a specific time range.
+- name: BMC Software API Dynamic metrics
+  description: Return historical metrics data, for a devices and/or services that
+    match a search or regex style inventory filter search over a specific time range.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
   humanURL: http://www.bmc.com
   baseURL: https://{host}//
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-definitions-.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-dynamicgraphs-.md
 x-common:
 - type: x-blog
   url: http://www.bmc.com/blogs
