@@ -25,15 +25,15 @@ modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/akamai/apis.yaml
 specificationVersion: "0.14"
 apis:
-- name: Akamai API List HTTP Ingest Metrics
-  description: List HTTP Ingest Metrics
+- name: Akamai API List RTMP Ingest Metrics
+  description: List RTMP Ingest Metrics
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Akamai_Technologies,_Inc._Logo.png
   humanURL: https://akamai.com
   baseURL: https://developer.akamai.com//
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/akamai/media-reports-v1-media-services-live-http-ingest-metrics-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/akamai/media-reports-v1-media-services-live-rtmp-ingest-metrics-get.md
 x-common:
 - type: x-base
   url: https://api.ccu.akamai.com
