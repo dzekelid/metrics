@@ -1,8 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: iotHubClient
-  description: Use this API to manage the IoT hubs in your subscription.
+  title: Azure IoT Hub API Iot Hub Resource Get Quota Metrics
+  description: Get the quota metrics for an IoT hub.
   version: 1.0.0
 host: management.azure.com
 basePath: /
