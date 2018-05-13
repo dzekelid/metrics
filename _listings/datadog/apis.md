@@ -37,6 +37,22 @@ x-common:
   url: https://www.datadoghq.com/security/
 - type: x-website
   url: https://www.datadoghq.com/
+- type: x-blog
+  url: https://www.datadoghq.com/blog/
+- type: x-blog-rss
+  url: https://www.datadoghq.com/feed/
+- type: x-github
+  url: https://github.com/datadog
+- type: x-twitter
+  url: https://twitter.com/datadoghq
+- type: x-integrations
+  url: https://www.datadoghq.com/product/integrations/
+- type: x-pricing
+  url: https://www.datadoghq.com/pricing/
+- type: x-security
+  url: https://www.datadoghq.com/security/
+- type: x-website
+  url: https://www.datadoghq.com/
 include: []
 maintainers:
 - FN: Kin Lane
