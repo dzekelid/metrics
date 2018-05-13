@@ -34,15 +34,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-cloudwatch/action-listmetrics-.md
-- name: Amazon CloudWatch API Describe Alarms For Metric
-  description: Retrieves the alarms for the specified metric.
+- name: Amazon CloudWatch API List Metrics
+  description: List the specified metrics.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Management-Tools_AmazonCloudWatch.png
   humanURL: https://aws.amazon.com/cloudwatch/
   baseURL: http:://{host}//
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-cloudwatch/action-describealarmsformetric-.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/aws-cloudwatch/action-listmetrics-.md
 x-common:
 - type: x-articles
   url: http://developer.amazonwebservices.com/connect/kbcategory.jspa?categoryID=100
