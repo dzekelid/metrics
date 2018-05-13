@@ -29,17 +29,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/metrics-id-get.md
-- name: Data.gov API Get Me Metrics
-  description: Fetch the current user (me) metrics
+- name: Data.gov API Get Metrics
+  description: Fetch metrics for an object given its ID
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/data-gov-logo.png
   humanURL: http://data.gov/
   baseURL: https://catalog.data.gov//api/3/
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/me-metrics-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/metrics-id-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/me-metrics-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datagov/metrics-id-get-postman.md
 x-common:
 - type: x-blog
   url: https://www.data.gov/meta/
