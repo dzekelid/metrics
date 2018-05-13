@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS CloudWatch API
+  title: Amazon CloudWatch API List Metrics
   version: 1.0.0
+  description: List the specified metrics.
 schemes:
 - http
 produces:
