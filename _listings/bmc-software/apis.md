@@ -26,6 +26,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-dynamicgraphs-.md
+- name: BMC Software API Get actions for a dashboard
+  description: |-
+    Retrieves the needed configuration changes for a dashboard
+     Returns an an array of objects, each has the following properties:
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
+  humanURL: http://www.bmc.com
+  baseURL: https://{host}//
+  tags: Metrics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/v1-metrics-dashactions-dashboardsetid-get.md
 x-common:
 - type: x-blog
   url: http://www.bmc.com/blogs
