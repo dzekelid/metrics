@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS Auto Scaling API
+  title: AWS Auto Scaling API Enable Metrics Collection
   version: 1.0.0
+  description: Enables group metrics for the specified Auto Scaling group.
 schemes:
 - http
 produces:
