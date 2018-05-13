@@ -1,8 +1,11 @@
 ---
 swagger: "2.0"
 info:
-  title: BMC Software Merged API
+  title: BMC Software API Get actions for a dashboard
   version: 1.0.0
+  description: |-
+    Retrieves the needed configuration changes for a dashboard
+     Returns an an array of objects, each has the following properties:
 schemes:
 - http
 produces:
