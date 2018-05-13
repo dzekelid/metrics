@@ -26,15 +26,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/metrics-dynamicgraphs-.md
-- name: BMC Software API Delete Mobile Device
-  description: Deletes a device from a user
+- name: BMC Software API Create metric
+  description: Creates a new metric
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bmc-truesight.png
   humanURL: http://www.bmc.com
   baseURL: https://{host}//
   tags: Metrics
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/v1-mobile-devices-userdeviceid-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/bmc-software/v1-metrics-post.md
 x-common:
 - type: x-blog
   url: http://www.bmc.com/blogs
