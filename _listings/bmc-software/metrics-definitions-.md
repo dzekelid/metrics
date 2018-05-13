@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: BMC Software Merged API
+  title: BMC Software API Available metrics
   version: 1.0.0
+  description: Determine which metrics are available to return historical data for,
+    for a specific subject (device or service) over a specific time range.
 schemes:
 - http
 produces:
