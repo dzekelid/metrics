@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: BMC Software Merged API
+  title: BMC Software API Create metric
   version: 1.0.0
+  description: Creates a new metric
 schemes:
 - http
 produces:
