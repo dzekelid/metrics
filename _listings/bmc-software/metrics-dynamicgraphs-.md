@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: BMC Software Merged API
+  title: BMC Software API Dynamic metrics
   version: 1.0.0
+  description: Return historical metrics data, for a devices and/or services that
+    match a search or regex style inventory filter search over a specific time range.
 schemes:
 - http
 produces:
