@@ -1,26 +1,44 @@
 ---
 name: IBM Watson
+x-slug: ibm-watson
 description: Meet IBM Watson, a cognitive system that enables a new partnership between
   people and computers that enhances and scales human expertise. Watson has been learning
   the language of professions and is trained by experts to work across many different
   industries.
 image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ibm-watson-logo.png
 x-kinRank: "9"
-x-alexaRank: ""
-tags:
-- Stack Network
-- Stack
-- Partners
-- Machine Learning
-- Machine Learning
-- Getting Started
-- API LIfeycle
-- AI
-created: "2018-05-13"
-modified: "2018-05-13"
+x-alexaRank: "0"
+tags: Metrics
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/ibm-watson/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: IBM Watson Machine Learning Get Wml Instances Instance Published Models Published
+    Model Evaluation Metrics
+  x-api-slug: ibm-watson-machine-learning
+  description: Get wml instances instance published models published model evaluation
+    metrics.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ibm-watson-logo.png
+  humanURL: https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/
+  baseURL: https://ibm-watson-ml.mybluemix.net/v3///wml_instances/{instance_id}/published_models/{published_model_id}/evaluation_metrics
+  tags: Machine Learning,Wml,Instances,Instance,Id,Published,Models,Published,Model,Id,Evaluation,Metrics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/ibm-watson/wml-instancesinstance-idpublished-modelspublished-model-idevaluation-metrics-get-openapi.md
+- name: IBM Watson Machine Learning
+  x-api-slug: ibm-watson-machine-learning
+  description: Meet IBM Watson, a cognitive system that enables a new partnership
+    between people and computers that enhances and scales human expertise. Watson
+    has been learning the language of professions and is trained by experts to work
+    across many different industries.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/ibm-watson-logo.png
+  humanURL: https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/
+  baseURL: https://ibm-watson-ml.mybluemix.net/v3/
+  tags: Metrics
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/ibm-watson/openapi.md
 x-common:
 - type: x-application-gallery
   url: https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/gallery.html
