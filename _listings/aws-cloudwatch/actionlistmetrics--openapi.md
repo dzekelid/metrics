@@ -13,6 +13,35 @@ produces:
 consumes:
 - application/json
 paths:
+  /?Action=ListMetrics:
+    "":
+      summary: List Metrics
+      description: List the specified metrics.
+      operationId: listmetrics
+      x-api-path-slug: actionlistmetrics-
+      parameters:
+      - in: query
+        name: Dimensions.member.N
+        description: The dimensions to filter against
+        type: string
+      - in: query
+        name: MetricName
+        description: The name of the metric to filter against
+        type: string
+      - in: query
+        name: Namespace
+        description: The namespace to filter against
+        type: string
+      - in: query
+        name: NextToken
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Metrics
   /?Action=DescribeAlarmsForMetric:
     "":
       summary: Describe Alarms For Metric
@@ -53,35 +82,54 @@ paths:
           description: OK
       tags:
       - Alarm Metrics
-  /?Action=ListMetrics:
+  /?Action=GetMetricStatistics:
     "":
-      summary: List Metrics
-      description: List the specified metrics.
-      operationId: listmetrics
-      x-api-path-slug: actionlistmetrics-
+      summary: Get Metric Statistics
+      description: Gets statistics for the specified metric.
+      operationId: getmetricstatistics
+      x-api-path-slug: actiongetmetricstatistics-
       parameters:
       - in: query
         name: Dimensions.member.N
-        description: The dimensions to filter against
+        description: The dimensions
+        type: string
+      - in: query
+        name: EndTime
+        description: The time stamp that determines the last data point to return
+        type: string
+      - in: query
+        name: ExtendedStatistics.member.N
+        description: The percentile statistics
         type: string
       - in: query
         name: MetricName
-        description: The name of the metric to filter against
+        description: The name of the metric, with or without spaces
         type: string
       - in: query
         name: Namespace
-        description: The namespace to filter against
+        description: The namespace of the metric, with or without spaces
         type: string
       - in: query
-        name: NextToken
-        description: The token returned by a previous call to indicate that there
-          is more dataavailable
+        name: Period
+        description: The granularity, in seconds, of the returned data points
+        type: string
+      - in: query
+        name: StartTime
+        description: The time stamp that determines the first data point to return
+        type: string
+      - in: query
+        name: Statistics.member.N
+        description: The metric statistics, other than percentile
+        type: string
+      - in: query
+        name: Unit
+        description: The unit for a given metric
         type: string
       responses:
         200:
           description: OK
       tags:
-      - Metrics
+      - Metric Statistics
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

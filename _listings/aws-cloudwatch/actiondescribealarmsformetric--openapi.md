@@ -13,6 +13,35 @@ produces:
 consumes:
 - application/json
 paths:
+  /?Action=ListMetrics:
+    "":
+      summary: List Metrics
+      description: List the specified metrics.
+      operationId: listmetrics
+      x-api-path-slug: actionlistmetrics-
+      parameters:
+      - in: query
+        name: Dimensions.member.N
+        description: The dimensions to filter against
+        type: string
+      - in: query
+        name: MetricName
+        description: The name of the metric to filter against
+        type: string
+      - in: query
+        name: Namespace
+        description: The namespace to filter against
+        type: string
+      - in: query
+        name: NextToken
+        description: The token returned by a previous call to indicate that there
+          is more dataavailable
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Metrics
   /?Action=DescribeAlarmsForMetric:
     "":
       summary: Describe Alarms For Metric

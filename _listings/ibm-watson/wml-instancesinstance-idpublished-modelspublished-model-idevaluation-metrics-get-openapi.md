@@ -8,7 +8,6 @@ info:
   description: Get wml instances instance published models published model evaluation
     metrics.
   version: 1.0.0
-host: ibm-watson-ml.mybluemix.net
 basePath: v3/
 schemes:
 - http
@@ -16,6 +15,7 @@ produces:
 - application/json
 consumes:
 - application/json
+host: ibm-watson-ml.mybluemix.net
 paths:
   /wml_instances/{instance_id}/published_models/{published_model_id}/evaluation_metrics:
     get:

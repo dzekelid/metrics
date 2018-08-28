@@ -7,59 +7,55 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18898-stat
 x-kinRank: "8"
 x-alexaRank: "34303"
 tags: Metrics
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/apis.md
 specificationVersion: "0.14"
 apis:
-- name: StatusPage.io Get a list of available public metric providers
-  x-api-slug: statuspage-io
+- name: StatusPage.io - Get a list of available public metric providers
+  x-api-slug: metrics-providers-json-get
   description: Get a list of available public metric providers
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18898-statuspage-io.jpg
   humanURL: https://www.statuspage.io/
-  baseURL: https://///metrics_providers.json
-  tags: Metrics
+  baseURL: https:///
+  tags: Monitoring, Stack Network, SaaS, Technology, internet, Relative Data, Service
+    API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/metrics-providers-json-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/metrics-providers-json-get-openapi.md
-- name: StatusPage.io Submit data for a custom metric
-  x-api-slug: statuspage-io
+- name: StatusPage.io - Submit data for a custom metric
+  x-api-slug: pagespage-idmetricsmetric-iddata-json-post
   description: Submit data for a custom metric
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18898-statuspage-io.jpg
   humanURL: https://www.statuspage.io/
-  baseURL: https://///pages/[page_id]/metrics/[metric_id]/data.json
-  tags: Metrics
+  baseURL: https:///
+  tags: Monitoring, Stack Network, SaaS, Technology, internet, Relative Data, Service
+    API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/pagespage-idmetricsmetric-iddata-json-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/pagespage-idmetricsmetric-iddata-json-post-openapi.md
-- name: StatusPage.io Delete all data for a custom metric
-  x-api-slug: statuspage-io
+- name: StatusPage.io - Delete all data for a custom metric
+  x-api-slug: pagespage-idmetricsmetric-iddata-json-delete
   description: Delete all data for a custom metric
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18898-statuspage-io.jpg
   humanURL: https://www.statuspage.io/
-  baseURL: https://///pages/[page_id]/metrics/[metric_id]/data.json
-  tags: Metrics
+  baseURL: https:///
+  tags: Monitoring, Stack Network, SaaS, Technology, internet, Relative Data, Service
+    API, Relative StreamRank, Streams
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/pagespage-idmetricsmetric-iddata-json-delete-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/pagespage-idmetricsmetric-iddata-json-delete-openapi.md
-- name: StatusPage.io
-  x-api-slug: statuspage-io
-  description: StatusPage.io is the best way for web infrastructure, developer API,
-    and SaaS companies to get set up with their very own status page in minutes
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18898-statuspage-io.jpg
-  humanURL: https://www.statuspage.io/
-  baseURL: https:///
-  tags: Metrics
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/statuspage/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://starred.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://statuspage.stack.network
 - type: x-authentication
   url: http://doers.statuspage.io/api/authentication/
 - type: x-blog

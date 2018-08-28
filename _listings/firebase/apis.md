@@ -7,51 +7,50 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "1"
 tags: Metrics
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/firebase/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Firebase Get Metrics Summary
-  x-api-slug: firebase
+- name: Firebase - Get Metrics Summary
+  x-api-slug: projectidhistorieshistoryidexecutionsexecutionidstepsstepidperfmetricssummary-get
   description: |-
     Retrieves a PerfMetricsSummary.
 
     May return any of the following error code(s): - NOT_FOUND - The specified PerfMetricsSummary does not exist
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/firebase-logo.png
   humanURL: https://Firebase.google.com
-  baseURL: https://{project_id].firebaseio.co}////{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfMetricsSummary
-  tags: Metrics
+  baseURL: https://{project_id].firebaseio.co}//
+  tags: Data, Real Time, API Provider, API Service Provider, SDIO Competition, Databases,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/firebase/projectidhistorieshistoryidexecutionsexecutionidstepsstepidperfmetricssummary-get-openapi.md
-- name: Firebase Create Metric Summary
-  x-api-slug: firebase
+- name: Firebase - Create Metric Summary
+  x-api-slug: projectidhistorieshistoryidexecutionsexecutionidstepsstepidperfmetricssummary-post
   description: |-
     Creates a PerfMetricsSummary resource.
 
     May return any of the following error code(s): - ALREADY_EXISTS - A PerfMetricSummary already exists for the given Step - NOT_FOUND - The containing Step does not exist
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/firebase-logo.png
   humanURL: https://Firebase.google.com
-  baseURL: https://{project_id].firebaseio.co}////{projectId}/histories/{historyId}/executions/{executionId}/steps/{stepId}/perfMetricsSummary
-  tags: Metrics
+  baseURL: https://{project_id].firebaseio.co}//
+  tags: Data, Real Time, API Provider, API Service Provider, SDIO Competition, Databases,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/firebase/projectidhistorieshistoryidexecutionsexecutionidstepsstepidperfmetricssummary-post-openapi.md
-- name: Firebase
-  x-api-slug: firebase
-  description: Firebase is a mobile platform that gives developers the tools and infrastructure
-    to build better apps and grow successful businesses.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/firebase-logo.png
-  humanURL: https://Firebase.google.com
-  baseURL: https://{project_id].firebaseio.co}//
-  tags: Metrics
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/firebase/openapi.md
 x-common:
+- type: x-google-firebase
+  url: Hacker News Search
+- type: x-stack-exchange-search
+  url: Google Firebase
 - type: x-website
   url: https://Firebase.google.com
+- type: x-api-gallery
+  url: http://fire.browse.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://firebase.stack.network
 - type: x-blog
   url: https://firebase.googleblog.com/
 - type: x-blog-rss

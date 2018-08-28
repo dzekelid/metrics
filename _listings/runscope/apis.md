@@ -6,34 +6,29 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runsc
 x-kinRank: "9"
 x-alexaRank: "125183"
 tags: Metrics
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/runscope/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Runscope Get Buckets Tests Metrics
-  x-api-slug: runscope
+- name: Runscope - Get Buckets Tests Metrics
+  x-api-slug: bucketsbucketkeyteststestidmetrics-get
   description: Return details of the test metrics for the specified timeframe.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
   humanURL: http://runscope.com
-  baseURL: https://api.runscope.com////buckets/{bucketKey}/tests/{testId}/metrics
-  tags: Buckets, Tests, Metrics
+  baseURL: https://api.runscope.com//
+  tags: My API Stack, Monitoring, Testing, Monitoring, Testing, API LIfeyclessss,
+    Stack Network, SaaS, Technology, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/runscope/bucketsbucketkeyteststestidmetrics-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/runscope/bucketsbucketkeyteststestidmetrics-get-openapi.md
-- name: Runscope
-  x-api-slug: runscope
-  description: API performance monitoring. Everything is going to be 200 OK
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1752-runscope.jpg
-  humanURL: http://runscope.com
-  baseURL: https://api.runscope.com//
-  tags: Metrics
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/runscope/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://royal.bank.of.scotland.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://runscope.stack.network
 - type: x-base-url
   url: https://api.runscope.com
 - type: x-blog

@@ -19,50 +19,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /applications/{application_id}/hosts/{host_id}/metrics.{format}:
-    get:
-      summary: Get Applications Application  Hosts Host  Metrics. Format
-      description: |-
-        Return a list of known metrics and their value names for the given resource.
-
-        See our documentation for a discussion
-        on  output pagination
-        and for examples of requesting and using metric values.
-      operationId: getApplicationsApplicationHostsHostMetrics.Format
-      x-api-path-slug: applicationsapplication-idhostshost-idmetrics-format-get
-      parameters:
-      - in: path
-        name: application_id
-        description: Application ID
-        type: integer
-      - in: query
-        name: cursor
-        description: Cursor for next page (replacing page param)
-        type: string
-      - in: path
-        name: host_id
-        description: Application Host ID
-        type: integer
-      - in: query
-        name: name
-        description: Filter metrics by name
-        type: string
-      - in: query
-        name: page
-        description: Pagination index (will be deprecated)
-        type: integer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Applications
-      - Application
-      - ""
-      - Hosts
-      - Host
-      - ""
-      - Metrics.
-      - Format
   /applications/{application_id}/hosts/{host_id}/metrics/data.{format}:
     get:
       summary: Get Applications Application  Hosts Host  Metrics Data. Format
@@ -125,50 +81,6 @@ paths:
       - ""
       - Metrics
       - Data.
-      - Format
-  /applications/{application_id}/instances/{instance_id}/metrics.{format}:
-    get:
-      summary: Get Applications Application  Instances Instance  Metrics. Format
-      description: |-
-        Return a list of known metrics and their value names for the given resource.
-
-        See our documentation for a discussion
-        on  output pagination
-        and for examples of requesting and using metric values.
-      operationId: getApplicationsApplicationInstancesInstanceMetrics.Format
-      x-api-path-slug: applicationsapplication-idinstancesinstance-idmetrics-format-get
-      parameters:
-      - in: path
-        name: application_id
-        description: Application ID
-        type: integer
-      - in: query
-        name: cursor
-        description: Cursor for next page (replacing page param)
-        type: string
-      - in: path
-        name: instance_id
-        description: Application Instance ID
-        type: integer
-      - in: query
-        name: name
-        description: Filter metrics by name
-        type: string
-      - in: query
-        name: page
-        description: Pagination index (will be deprecated)
-        type: integer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Applications
-      - Application
-      - ""
-      - Instances
-      - Instance
-      - ""
-      - Metrics.
       - Format
   /applications/{application_id}/instances/{instance_id}/metrics/data.{format}:
     get:
@@ -233,43 +145,6 @@ paths:
       - Metrics
       - Data.
       - Format
-  /applications/{application_id}/metrics.{format}:
-    get:
-      summary: Get Applications Application  Metrics. Format
-      description: |-
-        Return a list of known metrics and their value names for the given resource.
-
-        See our documentation for a discussion
-        on  output pagination
-        and for examples of requesting and using metric values.
-      operationId: getApplicationsApplicationMetrics.Format
-      x-api-path-slug: applicationsapplication-idmetrics-format-get
-      parameters:
-      - in: path
-        name: application_id
-        description: Application ID
-        type: integer
-      - in: query
-        name: cursor
-        description: Cursor for next page (replacing page param)
-        type: string
-      - in: query
-        name: name
-        description: Filter metrics by name
-        type: string
-      - in: query
-        name: page
-        description: Pagination index (will be deprecated)
-        type: integer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Applications
-      - Application
-      - ""
-      - Metrics.
-      - Format
   /applications/{application_id}/metrics/data.{format}:
     get:
       summary: Get Applications Application  Metrics Data. Format
@@ -325,43 +200,6 @@ paths:
       - ""
       - Metrics
       - Data.
-      - Format
-  /components/{component_id}/metrics.{format}:
-    get:
-      summary: Get Components Component  Metrics. Format
-      description: |-
-        Return a list of known metrics and their value names for the given resource.
-
-        See our documentation for a discussion
-        on  output pagination
-        and for examples of requesting and using metric values.
-      operationId: getComponentsComponentMetrics.Format
-      x-api-path-slug: componentscomponent-idmetrics-format-get
-      parameters:
-      - in: path
-        name: component_id
-        description: Component ID
-        type: integer
-      - in: query
-        name: cursor
-        description: Cursor for next page (replacing page param)
-        type: string
-      - in: query
-        name: name
-        description: Filter metrics by name
-        type: string
-      - in: query
-        name: page
-        description: Pagination index (will be deprecated)
-        type: integer
-      responses:
-        200:
-          description: OK
-      tags:
-      - Components
-      - Component
-      - ""
-      - Metrics.
       - Format
   /components/{component_id}/metrics/data.{format}:
     get:
@@ -419,6 +257,282 @@ paths:
       - Metrics
       - Data.
       - Format
+  /mobile_applications/{mobile_application_id}/metrics/data.{format}:
+    get:
+      summary: Get Mobile Applications Mobile Application  Metrics Data. Format
+      description: "This API endpoint returns a list of values for each of the requested
+        metrics. The list of available metrics\ncan be returned using the Metric Name
+        API endpoint.\n\nMetric data can be filtered by a number of parameters, including
+        multiple names and values, and by time range.\nMetric names and values will
+        be matched intelligently in the background.\n\nYou can also retrieve a summarized
+        data point across the entire time range selected by using the summarize\nparameter.\n\nSee
+        our documentation for a discussion on \noutput pagination,  time range \nrelated
+        considerations, and for examples of requesting and using metric values."
+      operationId: getMobileApplicationsMobileApplicationMetricsData.Format
+      x-api-path-slug: mobile-applicationsmobile-application-idmetricsdata-format-get
+      parameters:
+      - in: query
+        name: from
+        description: Retrieve metrics after this time
+        type: time
+      - in: path
+        name: mobile_application_id
+        description: Mobile application ID
+        type: integer
+      - in: query
+        name: names
+        description: Retrieve specific metrics by name
+        type: array
+      - in: query
+        name: period
+        description: Period of timeslices in seconds
+        type: integer
+      - in: query
+        name: raw
+        description: Return unformatted raw values
+        type: boolean
+      - in: query
+        name: summarize
+        description: Summarize the data
+        type: boolean
+      - in: query
+        name: to
+        description: Retrieve metrics before this time
+        type: time
+      - in: query
+        name: values
+        description: Retrieve specific metric values
+        type: array
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mobile
+      - Applications
+      - Mobile
+      - Application
+      - ""
+      - Metrics
+      - Data.
+      - Format
+  /servers/{server_id}/metrics/data.{format}:
+    get:
+      summary: Get Servers Server  Metrics Data. Format
+      description: "This API endpoint returns a list of values for each of the requested
+        metrics. The list of available metrics\ncan be returned using the Metric Name
+        API endpoint.\n\nMetric data can be filtered by a number of parameters, including
+        multiple names and values, and by time range.\nMetric names and values will
+        be matched intelligently in the background.\n\nYou can also retrieve a summarized
+        data point across the entire time range selected by using the summarize\nparameter.\n\nSee
+        our documentation for a discussion on \noutput pagination,  time range \nrelated
+        considerations, and for examples of requesting and using metric values."
+      operationId: getServersServerMetricsData.Format
+      x-api-path-slug: serversserver-idmetricsdata-format-get
+      parameters:
+      - in: query
+        name: from
+        description: Retrieve metrics after this time
+        type: time
+      - in: query
+        name: names
+        description: Retrieve specific metrics by name
+        type: array
+      - in: query
+        name: period
+        description: Period of timeslices in seconds
+        type: integer
+      - in: query
+        name: raw
+        description: Return unformatted raw values
+        type: boolean
+      - in: path
+        name: server_id
+        description: Server ID
+        type: integer
+      - in: query
+        name: summarize
+        description: Summarize the data
+        type: boolean
+      - in: query
+        name: to
+        description: Retrieve metrics before this time
+        type: time
+      - in: query
+        name: values
+        description: Retrieve specific metric values
+        type: array
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers
+      - Server
+      - ""
+      - Metrics
+      - Data.
+      - Format
+  /applications/{application_id}/hosts/{host_id}/metrics.{format}:
+    get:
+      summary: Get Applications Application  Hosts Host  Metrics. Format
+      description: |-
+        Return a list of known metrics and their value names for the given resource.
+
+        See our documentation for a discussion
+        on  output pagination
+        and for examples of requesting and using metric values.
+      operationId: getApplicationsApplicationHostsHostMetrics.Format
+      x-api-path-slug: applicationsapplication-idhostshost-idmetrics-format-get
+      parameters:
+      - in: path
+        name: application_id
+        description: Application ID
+        type: integer
+      - in: query
+        name: cursor
+        description: Cursor for next page (replacing page param)
+        type: string
+      - in: path
+        name: host_id
+        description: Application Host ID
+        type: integer
+      - in: query
+        name: name
+        description: Filter metrics by name
+        type: string
+      - in: query
+        name: page
+        description: Pagination index (will be deprecated)
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Applications
+      - Application
+      - ""
+      - Hosts
+      - Host
+      - ""
+      - Metrics.
+      - Format
+  /applications/{application_id}/instances/{instance_id}/metrics.{format}:
+    get:
+      summary: Get Applications Application  Instances Instance  Metrics. Format
+      description: |-
+        Return a list of known metrics and their value names for the given resource.
+
+        See our documentation for a discussion
+        on  output pagination
+        and for examples of requesting and using metric values.
+      operationId: getApplicationsApplicationInstancesInstanceMetrics.Format
+      x-api-path-slug: applicationsapplication-idinstancesinstance-idmetrics-format-get
+      parameters:
+      - in: path
+        name: application_id
+        description: Application ID
+        type: integer
+      - in: query
+        name: cursor
+        description: Cursor for next page (replacing page param)
+        type: string
+      - in: path
+        name: instance_id
+        description: Application Instance ID
+        type: integer
+      - in: query
+        name: name
+        description: Filter metrics by name
+        type: string
+      - in: query
+        name: page
+        description: Pagination index (will be deprecated)
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Applications
+      - Application
+      - ""
+      - Instances
+      - Instance
+      - ""
+      - Metrics.
+      - Format
+  /applications/{application_id}/metrics.{format}:
+    get:
+      summary: Get Applications Application  Metrics. Format
+      description: |-
+        Return a list of known metrics and their value names for the given resource.
+
+        See our documentation for a discussion
+        on  output pagination
+        and for examples of requesting and using metric values.
+      operationId: getApplicationsApplicationMetrics.Format
+      x-api-path-slug: applicationsapplication-idmetrics-format-get
+      parameters:
+      - in: path
+        name: application_id
+        description: Application ID
+        type: integer
+      - in: query
+        name: cursor
+        description: Cursor for next page (replacing page param)
+        type: string
+      - in: query
+        name: name
+        description: Filter metrics by name
+        type: string
+      - in: query
+        name: page
+        description: Pagination index (will be deprecated)
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Applications
+      - Application
+      - ""
+      - Metrics.
+      - Format
+  /components/{component_id}/metrics.{format}:
+    get:
+      summary: Get Components Component  Metrics. Format
+      description: |-
+        Return a list of known metrics and their value names for the given resource.
+
+        See our documentation for a discussion
+        on  output pagination
+        and for examples of requesting and using metric values.
+      operationId: getComponentsComponentMetrics.Format
+      x-api-path-slug: componentscomponent-idmetrics-format-get
+      parameters:
+      - in: path
+        name: component_id
+        description: Component ID
+        type: integer
+      - in: query
+        name: cursor
+        description: Cursor for next page (replacing page param)
+        type: string
+      - in: query
+        name: name
+        description: Filter metrics by name
+        type: string
+      - in: query
+        name: page
+        description: Pagination index (will be deprecated)
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Components
+      - Component
+      - ""
+      - Metrics.
+      - Format
   /mobile_applications/{mobile_application_id}/metrics.{format}:
     get:
       summary: Get Mobile Applications Mobile Application  Metrics. Format
@@ -455,6 +569,43 @@ paths:
       - Applications
       - Mobile
       - Application
+      - ""
+      - Metrics.
+      - Format
+  /servers/{server_id}/metrics.{format}:
+    get:
+      summary: Get Servers Server  Metrics. Format
+      description: |-
+        Return a list of known metrics and their value names for the given resource.
+
+        See our documentation for a discussion
+        on  output pagination
+        and for examples of requesting and using metric values.
+      operationId: getServersServerMetrics.Format
+      x-api-path-slug: serversserver-idmetrics-format-get
+      parameters:
+      - in: query
+        name: cursor
+        description: Cursor for next page (replacing page param)
+        type: string
+      - in: query
+        name: name
+        description: Filter metrics by name
+        type: string
+      - in: query
+        name: page
+        description: Pagination index (will be deprecated)
+        type: integer
+      - in: path
+        name: server_id
+        description: Server ID
+        type: integer
+      responses:
+        200:
+          description: OK
+      tags:
+      - Servers
+      - Server
       - ""
       - Metrics.
       - Format

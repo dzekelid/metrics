@@ -6,35 +6,31 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/22961-data
 x-kinRank: "8"
 x-alexaRank: "13593"
 tags: Metrics
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datadog/apis.md
 specificationVersion: "0.14"
 apis:
-- name: DataDog API Get Metrics
-  x-api-slug: datadog-api
+- name: DataDog Merged API - Get Metrics
+  x-api-slug: metrics-get
   description: Get the list of actively reporting metrics from a given time until
     now. This endpoint is not available in the Python and Ruby libraries.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/22961-datadog.jpg
   humanURL: https://www.datadoghq.com/
-  baseURL: https:///api/v1///metrics
-  tags: Monitoring,Metrics
+  baseURL: https:///api/v1/
+  tags: Monitoring, Performance, Orchestration, Aggregation, Stack Network, SaaS,
+    Technology, API Service Provider, API Provider, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datadog/metrics-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datadog/metrics-get-openapi.md
-- name: DataDog API
-  x-api-slug: datadog-api
-  description: See inside any stack, any app, at any scale, anywhere.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/22961-datadog.jpg
-  humanURL: https://www.datadoghq.com/
-  baseURL: https:///api/v1/
-  tags: Metrics
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/metrics/master/_listings/datadog/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://dataatwork.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://datadog.stack.network
 - type: x-blog
   url: https://www.datadoghq.com/blog/
 - type: x-blog-rss
